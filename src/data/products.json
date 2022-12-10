@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "name": "Moto E20",
+        "brand": "Motorola",
+        "price": "$34.999",
+        "description": "El Moto E20 cuenta con muy buenas características, entre ellas resalta su pantalla IPS de 6,5 pulgadas. El moto E20 tiene una batería de 4000 mAh. El procesador es UNISOC T606 y cuenta con sensor de huella. El moto E20 cuenta con una cámara principal 13MP + 2MP (depth) y frontal de 5MP.",
+        "images": "/images/Moto-E20.png"
+    },
+    {
+        "id": "2",
+        "name": "Monitor gamer curvo",
+        "brand": "LG",
+        "price": "$339.900",
+        "description": "Este monitor de 34 te va a resultar cómodo para estudiar, trabajar o ver una película en tus tiempos de ocio. Asimismo, su resolución de 3440 x 1440 te permite disfrutar de momentos únicos gracias a una imagen de alta fidelidad.",
+        "images": "Monitor-Curvo.png"
+    },
+    {
+        "id": "3",
+        "name": "Procesador Amd Ryzen 7",
+        "brand": "Amd",
+        "price": "$80.529",
+        "description": "Es un buen procesador que hereda la senda de otros grandes procesadores dentro de la familia “700X” con 8 núcleos y 16 hilos de proceso además de frecuencias turbo elevadas que lo convierten en la solución más equilibrada entre capacidad de proceso en paralelo y rendimiento en aplicaciones.",
+        "images": "Procesador.png"
+    }
+]
