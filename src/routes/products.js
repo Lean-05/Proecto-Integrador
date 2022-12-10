@@ -1,12 +1,12 @@
 const express = require("express");
 const router = express.Router();
 const productsController = require("../controllers/productsController");
+const ingresoRuta = require("../middlewares/log")
 
-
-router.get("/",productsController.list);
-router.get("/detalle",productsController.details);
-router.get("/crear",productsController.create);
-router.get("/editar",productsController.edit);
+router.get("/",ingresoRuta,productsController.list);
+router.get("/detalle",ingresoRuta,productsController.details);
+router.get("/crear",ingresoRuta,productsController.create);
+router.get("/editar",ingresoRuta,productsController.edit);
 
 module.exports = router;
 
