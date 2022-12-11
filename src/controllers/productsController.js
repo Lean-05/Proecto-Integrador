@@ -10,7 +10,14 @@ const productsController = {
         res.render("home",{productos:products});
     },
     details: (req, res) => {
-        res.render("detail",{productos:products});
+        products.forEach(product => {
+            if (product.id == req.params.id) {
+                res.render("detail",{productos:product});
+            } else {
+                res.redirect("/404-notfound")
+            }
+        });
+        console.log(req.params.id);
     },
     create: (req, res) => {
         res.render("createProduct",{productos:products});

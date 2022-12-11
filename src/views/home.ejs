@@ -16,21 +16,21 @@
     <%- include("partials/header") %>
     <!--/Header-->
     <section class="container1">
-        <a class="redireccion red1" href="/productos/detalle">
+        <a class="redireccion red1" href="/productos/detalle/<%= productos[0].id %>">
             <div class="cards">
                 <img src="/images/Moto-E20.png" alt="">
                 <h4><%= productos[0].name %></h4>
                 <h4><%= productos[0].price %></h4>
             </div>
         </a>
-        <a class="redireccion red2" href="">
+        <a class="redireccion red2" href="/productos/detalle/<%=productos[1].id %> ">
             <div class="cards">
                 <img src="/images/Monitor-Curvo.png" alt="">
                 <h4><%= productos[1].name %></h4>
                 <h4><%= productos[1].price %></h4>
             </div>
         </a>
-        <a class="redireccion red3" href="">
+        <a class="redireccion red3" href="/productos/detalle/<%= productos[2].id %>">
             <div class="cards">
                 <img src="/images/Procesador.png" alt="">
                 <h4><%= productos[2].name %></h4>

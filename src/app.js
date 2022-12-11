@@ -8,8 +8,12 @@ app.set("views", path.resolve(__dirname,"views"));
 app.use(express.static(path.resolve(__dirname,"../public")))
 
 /*Sistema de Rutas*/
-const products = require("./routes/products")
+
+//Ruta de main-productos
+const main = require("./routes/main")
+app.use("/",main);
 //Ruta de productos
+const products = require("./routes/products")
 app.use("/productos", products);
 
 /*404 NotFound*/
