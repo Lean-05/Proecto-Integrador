@@ -5,6 +5,6 @@ const rutatxt = path.resolve(__dirname,"../../Rutas-Ingresadas.txt")
 
 module.exports = function (req,res,next) {
     let ruta = req.originalUrl;
-    fs.appendFileSync(rutatxt,ruta,"utf-8")
+    fs.appendFileSync(rutatxt,ruta + "\n","utf-8")
     next();
 }

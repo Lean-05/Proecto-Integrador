@@ -1,1 +1,13 @@
-/productos/productos/productos/productos/detalle/productos/productos/detalle/productos/detalle/productos/crear/productos/editar/productos/productos/productos/productos/productos/productos/detalle//productos/detalle//productos/detalle//productos/productos/detalle//productos/detalle/productos/productos/detalle/productos/productos/productos/productos/productos/productos/detalle/productos/detalle/productos/productos/productos/productos/productos/detalle/1/productos/detalle/1/productos/productos/detalle/2/productos/productos/productos/productos/productos/productos/productos/detalle/1/productos/detalle/2/productos/detalle/3/productos/detalle/1/productos/productos/detalle/1/productos/detalle/1/productos/productos/detalle/1/productos/productos/productos/productos/productos/productos/detalle/1/productos/productos/detalle/1/productos/detalle/2/productos/detalle/1/productos/detalle/2/productos/productos/detalle/1/productos/detalle/2/productos/detalle/1/productos/detalle/1/productos/productos/detalle/1/productos/detalle/2/productos/productos/detalle/1
+/productos/detalle/1
+/productos/detalle/1
+/productos/detalle/1
+/productos/detalle/2
+/productos/detalle/3
+/productos/detalle/2
+/productos/editar/2
+/productos/detalle/1
+/productos/detalle/2
+/productos/detalle/3
+/productos/detalle/1
+/productos/editar/1
+/productos/crear

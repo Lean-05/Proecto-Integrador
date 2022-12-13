@@ -89,3 +89,44 @@ body{
     text-align: initial;
     margin: 30px;
 }
+.tit{
+    text-align: center;
+}
+.crear{
+    width: 1120px;
+    height: 356px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgb(0 0 0 / 40%);
+    overflow: hidden;
+    margin: 40px 0px 20px 105px;
+    transition: all 0.25s;
+}
+.formulario{
+    display: flex;
+    justify-content: space-around;
+}
+.formulario h6{
+    margin: 23px 0px 15px 0px;
+}
+.button{
+    width: 185px;
+    height: 50px;
+    margin-left: 125px;
+    transform: translateY(-15px);
+}
+.descrip{
+    width: 500px;
+    height: 165px;
+    transform: translateY(-23px);   
+}
+.tit-d{
+    transform: translateY(-23px);
+}
+.prec{
+    transform: translateY(-11px);
+}
+.editar{
+    width: 200px;
+    height: 40px;
+    transform: translate(57px,-66px);
+}

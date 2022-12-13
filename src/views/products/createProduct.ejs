@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto Nuevo</title>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+</head>
+
+<body>
+    <%- include("../partials/header") %>
+
+    <h2 class="tit">Ingrese los datos del Nuevo Producto</h2>
+    <div class="crear">
+        <form class="formulario" action="">
+            <div class="nombre">
+                <h6>Nombre del Producto</h6>
+                <input type="text">
+                <h6>Marca del Producto</h6>
+                <input type="text">
+            </div>
+               
+            <div class="precio">
+                <h6>Precio del Producto</h6>
+                <input class="prec" type="text">
+                <input class="button" type="button" value="Guardar">
+                <h6 class="tit-d" >Descripción</h6>
+                <input class="descrip" type="text">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

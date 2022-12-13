@@ -6,24 +6,18 @@ const productsJson = fs.readFileSync(rutaJson,"utf-8");
 const products = JSON.parse(productsJson);
 
 const productsController = {
-    list: (req, res) => {
-        res.render("home",{productos:products});
-    },
     details: (req, res) => {
-        products.forEach(product => {
-            if (product.id == req.params.id) {
-                res.render("detail",{productos:product});
-            } else {
-                res.redirect("/404-notfound")
-            }
-        });
-        console.log(req.params.id);
+        let product = products.find(product =>{
+            return product.id == req.params.id;
+        })
+        res.render("products/detail",{productos:product})
+        res.redirect("/404-notfound")
     },
     create: (req, res) => {
-        res.render("createProduct",{productos:products});
+        res.render("products/createProduct",{productos:products});
     },
     edit: (req, res) => {
-        res.render("editProduct",{productos:products});
+        res.render("products/editProduct",{productos:products});
     }
 }
 
