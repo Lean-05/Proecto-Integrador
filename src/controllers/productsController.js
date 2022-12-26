@@ -8,8 +8,10 @@ let productsController = {
     create: (req, res) => {
         res.render("products/createProduct");
     },
-    edit: (req, res) => {
-        res.render("products/editProduct");
+    edit: async (req, res) => {
+        const product = await Product.findById(req.params.id);
+        console.log(product);
+        res.render("products/editProduct", {producto: product});
     },
     store: async (req,res) =>{
         if (!req.file) {

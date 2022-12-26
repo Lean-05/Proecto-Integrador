@@ -15,7 +15,7 @@
 
         <h2 class="tit">Edite su Producto</h2>
         <div class="crear">
-            <form class="formulario" action="/productos/editar/:id " method="POST" enctype="multipart/form-data">
+            <form class="formulario" action="/productos/editar/<%= producto.id %> " method="POST" enctype="multipart/form-data">
                 <div class="nombre producto">
                     <h6>Nombre del Producto</h6>
                     <input name="name" type="text">
