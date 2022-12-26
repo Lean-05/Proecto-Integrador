@@ -1,23 +1,31 @@
-const path = require("path");
-const fs = require("fs");
+const Product = require("../data/models/Product");
 
-const rutaJson = path.resolve(__dirname,"../data/products.json");
-const productsJson = fs.readFileSync(rutaJson,"utf-8");
-const products = JSON.parse(productsJson);
-
-const productsController = {
-    details: (req, res) => {
-        let product = products.find(product =>{
-            return product.id == req.params.id;
-        })
+let productsController = {
+    details: async (req, res) => {
+        const product = await Product.findById(req.params.id);
         res.render("products/detail",{productos:product})
-        res.redirect("/404-notfound")
     },
     create: (req, res) => {
-        res.render("products/createProduct",{productos:products});
+        res.render("products/createProduct");
     },
     edit: (req, res) => {
-        res.render("products/editProduct",{productos:products});
+        res.render("products/editProduct");
+    },
+    store: async (req,res) =>{
+        if (!req.file) {
+            return res.send("La imagen tiene que ser obligartoria: .jpg")
+        }
+        await Product.create({...req.body, images: req.file.filename});
+        return res.redirect("/");
+    },
+    toUpdate: async (req,res) =>{
+        let productId = Product.findById({_id: req.params.id})
+        let act=  await Product.findByIdAndUpdate(req.params.id,req.body)
+        console.log(req.body);
+        return res.redirect("/");
+    },
+    eliminate: (req,res) =>{
+
     }
 }
 

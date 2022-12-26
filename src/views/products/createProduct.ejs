@@ -15,20 +15,22 @@
 
     <h2 class="tit">Ingrese los datos del Nuevo Producto</h2>
     <div class="crear">
-        <form class="formulario" action="">
+        <form class="formulario" action="/productos/crear" method="POST" enctype="multipart/form-data">
             <div class="nombre">
                 <h6>Nombre del Producto</h6>
-                <input type="text">
+                <input name="name" type="text">
                 <h6>Marca del Producto</h6>
-                <input type="text">
+                <input name="brand" type="text">
+                <h6>Imagen</h6>
+                <input id="images" name="images" type="file">
             </div>
                
             <div class="precio">
                 <h6>Precio del Producto</h6>
-                <input class="prec" type="text">
-                <input class="button" type="button" value="Guardar">
+                <input name="price" class="prec" type="text">
+                <input  class="button" type="submit" value="Guardar">
                 <h6 class="tit-d" >Descripción</h6>
-                <input class="descrip" type="text">
+                <input name="description" class="descrip" type="text">
             </div>
         </form>
     </div>

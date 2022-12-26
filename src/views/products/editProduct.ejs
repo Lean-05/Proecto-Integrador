@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,27 +9,31 @@
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/bootstrap.css">
 </head>
+
 <body>
     <%- include("../partials/header") %>
-    
-    <h2 class="tit">Edite su Producto</h2>
+
+        <h2 class="tit">Edite su Producto</h2>
         <div class="crear">
-            <form class="formulario" action="">
+            <form class="formulario" action="/productos/editar/:id " method="POST" enctype="multipart/form-data">
                 <div class="nombre producto">
                     <h6>Nombre del Producto</h6>
-                    <input type="text">
+                    <input name="name" type="text">
                     <h6>Marca del Producto</h6>
-                    <input type="text">
+                    <input name="brand" type="text">
+                    <h6>Imagen</h6>
+                    <input id="images" name="images" type="file">
                 </div>
-               
+
                 <div class="precio descripcion">
                     <h6>Precio del Producto</h6>
-                    <input class="prec" type="text">
-                    <input class="button" type="button" value="Guardar">
-                    <h6 class="tit-d" >Descripción</h6>
-                    <input class="descrip" type="text">
+                    <input name="price" class="prec" type="text">
+                    <input class="button" type="submit" value="Guardar">
+                    <h6 class="tit-d">Descripción</h6>
+                    <input name="description" class="descrip" type="text">
                 </div>
             </form>
         </div>
 </body>
+
 </html>

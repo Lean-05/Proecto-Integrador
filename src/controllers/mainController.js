@@ -1,13 +1,14 @@
-const path = require("path");
-const fs = require("fs");
-
-const rutaJson = path.resolve(__dirname,"../data/products.json");
-const productsJson = fs.readFileSync(rutaJson,"utf-8");
-const products = JSON.parse(productsJson);
+const Product = require("../data/models/Product");
 
 const mainController = {
-    home: (req,res) => {
-        res.render("home",{productos:products});
+    home: async (req,res) => {
+        const products = await Product.find()
+        res.render("home",{productos: products})
+    },
+    search: (req,res) => {
+        const buscador = req.query.buscador;
+        const resultadoBuscador = products.filter((product) => product.name.includes(buscador) || product.name.toLowerCase().includes(buscador));
+        res.render("products/search",{productEncontrado:resultadoBuscador})
     }
 }
 

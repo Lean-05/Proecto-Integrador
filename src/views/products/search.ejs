@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busqueda</title>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+</head>
+<body>
+    <%- include("../partials/header") %>
+    <section class="container1">
+        <% productEncontrado.forEach(producto=> { %>
+            <a class="redireccion red1" href="/productos/detalle/<%=producto.id %>">
+                <div class="cards">
+                    <img src="/images/<%=producto.images %>" alt="">
+                    <h4><%= producto.name %></h4>
+                    <h4><%= producto.price %></h4>
+                </div>
+            </a>
+        <% }) %>
+    </section>
+</body>
+</html>
