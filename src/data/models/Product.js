@@ -1,5 +1,8 @@
+//Requerimos Mongoose 
 const { Schema, model } = require("mongoose");
+const mongooseDelete = require("mongoose-delete");
 
+//Alcenamos en la variable el modelo que tendra cada Producto
 const Product = new Schema({
     name: {
         type: String,
@@ -23,5 +26,9 @@ const Product = new Schema({
     }
 })
 
+//Para borrar un producto sin borrarlo
+Product.plugin(mongooseDelete, {overrideMethods: "all"});
+
+//Exportamos el Modulo
 module.exports = model("Product", Product);
 

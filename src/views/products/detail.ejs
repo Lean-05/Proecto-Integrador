@@ -12,14 +12,16 @@
 <body>
     <!--Header-->
     <%- include("../partials/header") %> 
-    <!--/Header-->
     <section class="container2">
         <div class="cards2">
             <img src="/images/<%=productos.images %>" alt="">
             <div class="cont">
                 <h4 class="dato"><%= productos.name %></h4>
                 <h4 class="dato1"><%= productos.price %></h4>
-                <a href="/productos/editar/<%= productos._id %> "><input class="editar" type="button" value="Editar Producto"></a>
+                <a  class= "edithttp"href="/productos/editar/<%= productos._id %> "><input class="editar" type="button" value="Editar Producto"></a>
+                <form action="/productos/borrar/<%= productos._id %>" method="POST" >
+                    <input class="eliminar" type="submit" value="Eliminar Producto"> 
+                </form>
                 <h4>Descripcion:</h4>
                 <p class="desc"><%= productos.description %></p>
             </div>

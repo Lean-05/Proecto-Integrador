@@ -125,8 +125,17 @@ body{
 .prec{
     transform: translateY(-11px);
 }
-.editar{
+.editar, .eliminar{
     width: 200px;
     height: 40px;
-    transform: translate(57px,-66px);
+}
+.edithttp{
+    position: absolute;
+    top: 235px;
+    right: 210px;
+}
+.eliminar{
+    position: absolute; 
+    top: 300px;
+    right: 210px;
 }

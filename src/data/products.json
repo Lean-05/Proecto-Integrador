@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "name": "Moto E20",
     "brand": "Motorola",
     "price": "$34.999",
@@ -8,7 +7,6 @@
     "images": "Moto-E20.png"
   },
   {
-    "id": 2,
     "name": "Monitor gamer curvo",
     "brand": "LG",
     "price": "$339.900",
@@ -16,7 +14,6 @@
     "images": "Monitor-Curvo.png"
   },
   {
-    "id": 3,
     "name": "Procesador Amd Ryzen 7",
     "brand": "Amd",
     "price": "$80.529",
